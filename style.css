@@ -1,8 +1,42 @@
 *, body{
     margin: 0px;
-    ;
 }
 
-.body_container{
-    background-color: rgb(46, 43, 43);
+.body-container{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-size: 70px;
+    border: 1px solid wheat;
+
+}
+input{
+    width: 300px;
+    height:40px;
+    border-radius: 10px;
+    background-color: rgb(228, 236, 16);
+    padding: 5px;
+    font-size: 22px;
+    border: none;
+    color: black;
+}
+.weather-container{
+    border: 1px solid wheat;
+    width: 800px;
+    height: 500px;
+    border-radius: 15px;
+}
+.searchIcon{
+    width: 120px;
+    height: 10px;
+    background-color: white;
+    border: 1px solid wheat;
+
 }

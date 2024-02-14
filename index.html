@@ -5,11 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>'Weather App'</title>
     <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="body_container">
-      <div class="weather_container"></div>
+    <div class="body-container">
+      <h1>Weather App</h1>
+
+      <form action="/action_page.php" method="get">
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" name="browser" id="browser" />
+        <datalist id="browsers">
+          <option value="Edge"></option>
+          <option value="Firefox"></option>
+          <option value="Chrome"></option>
+          <option value="Opera"></option>
+          <option value="Safari"></option>
+        </datalist>
+
+        <input type="submit" />
+      </form>
+
+      <div class="weather-container"></div>
     </div>
   </body>
 </html>
