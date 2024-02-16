@@ -17,15 +17,30 @@ h1{
     border: 1px solid wheat;
 
 }
-input{
-    width: 300px;
-    height:40px;
+/* INPUT FIELD CITY STATE DISTRICT */
+input::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+#selectHeader, #places{
+    width: 150px;
+    height:30px;
     border-radius: 10px;
-    background-color: rgb(228, 236, 16);
+    background-color: rgb(41, 99, 117);
     padding: 5px;
     font-size: 22px;
     border: none;
-    color: black;
+    color: white;
+    padding-left: 5px;
+}
+/* INPUT FIELS PARTICULAR PLACES */
+.option{
+    width: 140px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: cadetblue;
+    color: white;
+    font-size: 12px;
+    text-align: center;
 }
 .weather-container{
     border: 1px solid wheat;
@@ -38,5 +53,4 @@ input{
     height: 10px;
     background-color: white;
     border: 1px solid wheat;
-
 }

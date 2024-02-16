@@ -5,31 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>'Weather App'</title>
     <link rel="stylesheet" href="/style.css" />
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="body-container">
       <h1>Weather App</h1>
-
-      <form action="/action_page.php" method="get">
-        <label for="browser">Choose your browser from the list:</label>
-        <input list="browsers" name="browser" id="browser" />
+      <template id="option">
+        <option value=""></option>
+      </template>
+      <div>
+        <input
+          list="browsers"
+          name="placeHeaders"
+          id="selectHeader"
+          onkeyup="loadPlacesinDropdown(this)"
+        />
         <datalist id="browsers">
-          <option value="Edge"></option>
-          <option value="Firefox"></option>
-          <option value="Chrome"></option>
-          <option value="Opera"></option>
-          <option value="Safari"></option>
+          <option class="option" value="City"></option>
+          <option class="option" value="State"></option>
+          <option class="option" value="District"></option>
         </datalist>
-
-        <input type="submit" />
-      </form>
+      </div>
+      <div>
+        <input list="particularPlaceList" name="places" id="places" />
+        <datalist id="particularPlaceList"> </datalist>
+      </div>
 
       <div class="weather-container"></div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
