@@ -9,25 +9,20 @@
   <body>
     <div class="body-container">
       <h1>Weather App</h1>
-      <template id="option">
-        <option value=""></option>
+      <template id="optionTemp">
+        <option class="option" value=""></option>
       </template>
       <div>
-        <input
-          list="browsers"
-          name="placeHeaders"
-          id="selectHeader"
-          onkeyup="loadPlacesinDropdown(this)"
-        />
-        <datalist id="browsers">
-          <option class="option" value="City"></option>
-          <option class="option" value="State"></option>
-          <option class="option" value="District"></option>
-        </datalist>
+        <select id="browsers" class="option">
+          <option disabled selected value>-- select an option --</option>
+          <option class="option">city</option>
+          <option class="option" value="State">asdf</option>
+          <option class="option" value="District">asd</option>
+        </select>
       </div>
       <div>
         <input list="particularPlaceList" name="places" id="places" />
-        <datalist id="particularPlaceList"> </datalist>
+        <select id="particularPlaceList"></select>
       </div>
 
       <div class="weather-container"></div>

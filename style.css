@@ -21,26 +21,29 @@ h1{
 input::-webkit-calendar-picker-indicator {
     display: none;
   }
-#selectHeader, #places{
-    width: 150px;
-    height:30px;
+.selectHeader, #places{
+    width: 200px;
+    height:40px;
+    text-align: center;
     border-radius: 10px;
     background-color: rgb(41, 99, 117);
-    padding: 5px;
+    padding: 10px;
     font-size: 22px;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding-left: 5px;
 }
 /* INPUT FIELS PARTICULAR PLACES */
 .option{
-    width: 140px;
-    height: 25px;
-    border-radius: 5px;
-    background-color: cadetblue;
-    color: white;
-    font-size: 12px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(191, 245, 236);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
     text-align: center;
+    padding: 5px;
+    margin: 10px;
 }
 .weather-container{
     border: 1px solid wheat;
